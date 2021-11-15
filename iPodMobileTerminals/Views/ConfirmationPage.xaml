@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.ConfirmationPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid HeightRequest="80" WidthRequest="120" HorizontalOptions="Start" Grid.Column="0" Padding="15,10" >
+                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                        <Button Grid.Column="0" Text="続ける"  FontSize="20"  BackgroundColor="Transparent" CornerRadius="20" FontAttributes="Bold"/>
+                    </Grid>
+                    <Label Grid.Column="1" Text="注文内容の確認"  Margin="0,0,75,0" TextColor="White"  FontSize="18"  HorizontalOptions="Center" VerticalOptions="Center"  FontAttributes="Bold"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <ScrollView x:Name="scroller"
+                    Orientation="Vertical"           
+                    Grid.Row="0" Grid.Column="1"
+                    Grid.RowSpan="10" Grid.ColumnSpan="5">
+                    <Grid  BackgroundColor="LightSlateGray" Padding ="10, 10, 10, 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Grid HeightRequest="30" WidthRequest="280" HorizontalOptions="Start" Grid.Row="0"  Grid.ColumnSpan="2">
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Label Text="コカコーラ" Margin="5" FontAttributes="Bold" />
+                        </Grid>
+                        <Grid  Grid.Row="0" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Label Text="0" x:Name="qun1" HorizontalOptions="CenterAndExpand"   VerticalOptions="Center" />
+                        </Grid>
+                        <Grid  Grid.Row="0" Grid.Column="3" >
+                            <Button Text="+" Clicked="Button_Clicked_1" BackgroundColor="#D2D8D6"  FontAttributes="Bold" TextColor="Black"/>
+                        </Grid>
+                        <Grid  Grid.Row="0" Grid.Column="4" >
+                            <Button Text="-" Clicked="Button_Clicked_2" BackgroundColor="#D2D8D6" FontAttributes="Bold" TextColor="Black"  />
+                        </Grid>
+
+                        <Grid HeightRequest="30" WidthRequest="280" HorizontalOptions="Start" Grid.Row="1"  Grid.ColumnSpan="2">
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Label Text="カルピス" Margin="5" FontAttributes="Bold" />
+                        </Grid>
+                        <Grid  Grid.Row="1" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Label Text="0" x:Name="qun2" HorizontalOptions="CenterAndExpand"   VerticalOptions="Center" />
+                        </Grid>
+                        <Grid  Grid.Row="1" Grid.Column="3" >
+                            <Button Text="+" Clicked="Button_Clicked" BackgroundColor="#D2D8D6"  FontAttributes="Bold" TextColor="Black" />
+                        </Grid>
+                        <Grid  Grid.Row="1" Grid.Column="4" >
+                            <Button Text="-"  Clicked="Button_Clicked_3"  BackgroundColor="#D2D8D6" FontAttributes="Bold" TextColor="Black"  />
+                        </Grid>
+
+                        <Grid HeightRequest="50" WidthRequest="280" HorizontalOptions="Start" Grid.Row="8"  Grid.ColumnSpan="2" >
+                            
+                        </Grid>
+                        <Grid HeightRequest="50" WidthRequest="280" HorizontalOptions="Start" Grid.Row="8"  Grid.Column="2" Grid.ColumnSpan="3">
+                            
+                        </Grid>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="30,0,0,0"  >
+                    <Button Text="注文する"  FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="#D2D8D6" TextColor="Black" BorderWidth="2" BorderColor="MintCream"/>
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Button Text="注文内容を     クリアする"  FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="#D2D8D6" TextColor="Red"  BorderWidth="2" BorderColor="MintCream" />
+                </Grid>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Margin="20,30,0,0">
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="続ける" Clicked="ContinueClicked" FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="MintCream"/>
+
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="バック" Clicked="BackClicked" FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow"  />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

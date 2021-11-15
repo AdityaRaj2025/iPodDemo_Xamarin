@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.CategoryListPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Teal" Padding="10,10">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="部屋" BackgroundColor="Purple" TextColor="White" Margin="10,0,0,0" FontSize="20" CornerRadius="20" FontAttributes="Bold" Clicked="Button_RoomClicked"  />
+                <Label Text="分類を選択"  TextColor="White" Padding="20" FontSize="20" FontAttributes="Bold" ></Label>
+            </StackLayout>
+
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout>
+                        
+                        <Grid HeightRequest="550">
+                            <ScrollView x:Name="scroller"
+                                Orientation="Vertical"                             
+                                 Grid.Row="0" Grid.Column="0"
+                                 Grid.RowSpan="10" Grid.ColumnSpan="5">
+                                <StackLayout Grid.Row="1"  Margin="0,20" BackgroundColor="LightSlateGray">
+                                                               
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="焼前" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="ドリンク" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="日本酒" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="コース-室料" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="果実酒" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="コース-室料" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+
+                                </StackLayout>
+                            </ScrollView>
+                        </Grid>
+                    </StackLayout>
+
+
+                    <Grid Grid.Column="1" Margin="0,15" BackgroundColor="LightSlateGray">
+
+                            <Grid HeightRequest="0">
+                            <ScrollView x:Name="scrollers"
+                                Orientation="Vertical"                             
+                                 Grid.Row="0" Grid.Column="0"
+                                 Grid.RowSpan="10" Grid.ColumnSpan="5">
+                                <StackLayout Grid.Row="1" HorizontalOptions="Start" Margin="1,0,0,0" Spacing="5">
+                                
+
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="飲み放題"  HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="酎ハイ" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="おすすめ" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="ウィスキー" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="フード" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="焼前" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="ドリンク" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="日本酒" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="コース-室料" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="果実酒" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                    <Grid HeightRequest="60" WidthRequest="188" HorizontalOptions="Center">
+                                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                        <Button Text="コース-室料" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                                    </Grid>
+                                
+                            </StackLayout>
+                            </ScrollView>
+                        </Grid>
+                        </Grid>
+                    </Grid>
+               
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Margin="10,80,0,0" >
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="部屋"  FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" Clicked="Button_RoomClicked"  TextColor="MintCream"/>
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="注文確認"  FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow" Clicked="Button_CategoryConfirmationClicked" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

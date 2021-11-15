@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.NewCategoryPage">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Add Room Details" HorizontalOptions="Center"/>
+            <Label Text="Room Code" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" x:Name="RoomCode"/>
+            <Entry Placeholder="Room Code" TextColor="Black"/>
+
+            <Label Text="Room Status" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" />
+            <Entry Placeholder="Room Status" TextColor="Black" x:Name="RoomStatus"/>
+
+           <!-- <Label Text="Phone Number" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" />
+            <Entry Placeholder="Phone Number" Keyboard="Numeric" TextColor="Black" x:Name="PhoneNumber"/>
+
+            <Label Text="Email" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" />
+            <Entry Placeholder="Email" TextColor="Black" Keyboard="Email" x:Name="Email"/>
+
+            <Label Text="Password" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" />
+            <Entry Placeholder="Password" TextColor="Black" x:Name="Password" IsPassword="False"/>-->
+
+            <Button Text="Save" HorizontalOptions="FillAndExpand" BackgroundColor="Maroon" TextColor="White" Margin="0,10,0,0" Clicked="SaveRoomDetails"/>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.ClearOrderPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="注文のクリア"
+                 
+                HorizontalOptions="CenterAndExpand" FontSize="40" FontAttributes="Bold" TextColor="MintCream" />
+            <StackLayout>
+                <Button Grid.Column="1" Text="全ての注文をクリアします" FontSize="20" VerticalOptions="Center" BackgroundColor="#D2D8D6" Margin="15,80" Padding="0,50" TextColor="Black"  CornerRadius="35" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Grid HeightRequest="85" WidthRequest="160" HorizontalOptions="Start"  Margin="10,0,0,0"  >
+                    <Button Text="クリアする"  FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="#D2D8D6" TextColor="Black" BorderWidth="2" BorderColor="MintCream"/>
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="250" HorizontalOptions="Start"  Margin="10,0,5,0" >
+                    <Button Text="クリアしてタイトル"  FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="#D2D8D6" TextColor="Red"  BorderWidth="2" BorderColor="MintCream" />
+                </Grid>
+            </StackLayout>
+            <StackLayout Padding="0,10">
+                <Grid HeightRequest="85" WidthRequest="160" HorizontalOptions="Center"  Margin="10,0,0,0"  >
+                    <Button Text="キャンセル"  FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="#D2D8D6" TextColor="Black" BorderWidth="2" BorderColor="MintCream"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="20,200,0,0" Padding="0,0,0,20">
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="次へ" Clicked="Button_NextClicked" FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="MintCream"/>
+
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="バック" Clicked="Button_BackClicked" FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow"  />
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

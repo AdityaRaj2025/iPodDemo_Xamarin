@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.ItemListPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Text="分類" Grid.Row="0" Grid.Column="0" BackgroundColor="#FFEBEE" CornerRadius="10" FontAttributes="Bold" Clicked="Button_CategoryListonClicked"></Button>
+                    <Label Text="商品を選択" Grid.Row="0" Grid.Column="2" Margin="-35,10" FontAttributes="Bold" ></Label>
+                    <Button Text="注文確認" Grid.Row="0" Grid.Column="3" BackgroundColor="#FFEBEE" CornerRadius="10" FontAttributes="Bold"></Button>
+                </Grid>
+
+            </StackLayout>
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+
+                <Grid HeightRequest="650" >
+
+                    <StackLayout  Margin="5,10,0,15">
+                        <ScrollView x:Name="scroller"
+                        Orientation="Vertical"
+                        Grid.Row="0" Grid.Column="1"
+                        Grid.RowSpan="10" Grid.ColumnSpan="5"  BackgroundColor="LightSlateGray">
+
+                            <Grid Padding ="0, 0, 0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="コカコーラ " Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="950円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="1" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="オレンジジュース" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="300円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="カルピスソーダ " Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="350円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="グレープフルニッ  " Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="250円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="0" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="ウーロン茶 " Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="200円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスオーレ " Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="250円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="3" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="4" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="4" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="5" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="5" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="6" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="6" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="7" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="7" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="8" Grid.Column="0">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                                <Grid HeightRequest="80" WidthRequest="180" HorizontalOptions="Center" Grid.Row="8" Grid.Column="1">
+                                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                    <Label Text="アイスコーヒー" Margin="5" FontAttributes="Bold"/>
+                                    <Button Text="450円" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                    <Label Text="" TextColor="Yellow" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                </Grid>
+                            </Grid>
+                        </ScrollView>
+                    </StackLayout>
+                </Grid>
+
+
+            </Grid>
+
+            <Grid Padding="5" Margin="0,-20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Text="+1" Grid.Row="0" Grid.Column="0" CornerRadius="10" BackgroundColor="#FFEBEE"></Button>
+                <Button Text="+5" Grid.Row="0" Grid.Column="1" CornerRadius="10" BackgroundColor="#FFEBEE"></Button>
+                <Button Text="0" Grid.Row="0" Grid.Column="2"  CornerRadius="10" BackgroundColor="#FFEBEE"></Button>
+                <Button Text="-5" Grid.Row="0" Grid.Column="3" CornerRadius="10" BackgroundColor="#FFEBEE"></Button>
+                <Button Text="-1" Grid.Row="0" Grid.Column="4" CornerRadius="10" BackgroundColor="#FFEBEE"></Button>
+            </Grid>
+
+            <Grid Margin="5,15" Padding="5"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="分類" BackgroundColor="#E1BEE7" Grid.Row="0" Grid.Column="0"  FontSize="20" Padding="0,20" CornerRadius="30" FontAttributes="Bold" Clicked="Button_CategoryListonClicked" />
+                <Button Text="注文確認" BackgroundColor="#E1BEE7" Grid.Row="0" Grid.Column="1" FontSize="20" CornerRadius="30" FontAttributes="Bold" Clicked="Button_SubItemListClicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

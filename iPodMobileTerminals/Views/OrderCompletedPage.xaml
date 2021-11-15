@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.OrderCompletedPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="注文送信"
+                 
+                HorizontalOptions="CenterAndExpand" FontSize="40" FontAttributes="Bold" TextColor="MintCream" />
+            <StackLayout>
+                <Button Grid.Column="1" Text="注文を受け付けました" FontSize="20" VerticalOptions="Center" BackgroundColor="#D2D8D6" Margin="15,80" Padding="0,50" TextColor="Black"  CornerRadius="35" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="画面タッチでトップへ戻ります" HorizontalOptions="Center" FontSize="20"  FontAttributes="Bold"  TextColor="White" />
+                <Label Text="(この画面は自動的に閉じられます）" HorizontalOptions="Center" FontSize="20"  FontAttributes="Bold"  TextColor="White" Padding="0,20" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="20,250,0,0">
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="トップ" Clicked="Button_TopClicked" FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="MintCream"/>
+
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="バック" Clicked="Button_BackClicked" FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow"  />
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.NewCustomerPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid Padding="15">
+                    <Button Text="習盤"  FontAttributes="Bold" FontSize="25" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" BorderWidth="2" BorderColor="White" CornerRadius="10"/>
+                    <Label Text="人数を選択" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"  Padding="0,10" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                </Grid>
+                
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Entry TextColor="Black" Placeholder="人" Text="0人" IsReadOnly="True" BackgroundColor="White" WidthRequest="100" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout >
+                <Grid HorizontalOptions="Center" BackgroundColor="LightSlateGray" >
+                    <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="0" Grid.Row="0" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="1" Grid.Row="1" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="2" Grid.Row="2" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="3" Grid.Row="3" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="4" Grid.Row="4" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="5" Grid.Row="5" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="6" Grid.Row="6" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="7" Grid.Row="7" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="8" Grid.Row="8" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                    <Button Text="9" Grid.Row="9" Grid.Column="0" BorderWidth="2" BorderColor="White" CornerRadius="10" BackgroundColor="#D2D8D6" TextColor="Black" />
+                </Grid>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="20,100,0,10">
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="トップ" Clicked="Button_TopClicked" FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="MintCream"/>
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="バック" Clicked="Button_BackClicked" FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow"  />
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

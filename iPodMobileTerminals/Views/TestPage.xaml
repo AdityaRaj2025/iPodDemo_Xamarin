@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.TestPage">
+    <ContentPage.Content>
+       
+          <!--  <StackLayout Padding="15">
+                <ListView x:Name="EmployeeList" HasUnevenRows="False">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Spacing="2">
+                                   <Label Text="{Binding Name,StringFormat='Name:{0,F0}'}" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Address,StringFormat='Address:{0,F0}'}" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding PhoneNumber,StringFormat='PhoneNumber:{0,F0}'}" FontSize="Small" FontAttributes="Bold"/>
+                                    <ScrollView x:Name="scroller"
+                    Orientation="Vertical"           
+                    Grid.Row="0" Grid.Column="1"
+                    Grid.RowSpan="10" Grid.ColumnSpan="5">
+                                        <Grid  BackgroundColor="LightSlateGray" Padding ="10, 10, 10, 10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                
+
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid HeightRequest="70" WidthRequest="70" HorizontalOptions="Start"  >
+                                                <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                                                <Button Text="{Binding Name,StringFormat='Name:{0,F0}'}" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                                                <Label Text="1" Margin="5" FontAttributes="Bold" />
+                                                <Label Text="{Binding Address,StringFormat='Address:{0,F0}'}" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                                            </Grid>
+                                        </Grid>
+                                    </ScrollView>
+
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>-->
+
+            <CollectionView ItemsSource="{Binding RoomDetails}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                        Span="2" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="35" />
+                                <RowDefinition Height="35" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="140" />
+                            </Grid.ColumnDefinitions>
+                           
+                            <Label Grid.Column="1"
+                       Text="{Binding RoomCode}"
+                       FontAttributes="Bold"
+                       LineBreakMode="TailTruncation" />
+                            <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding RoomStatus}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

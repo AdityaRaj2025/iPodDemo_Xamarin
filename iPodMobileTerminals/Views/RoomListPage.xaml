@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.RoomListPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Teal" Padding="10,10">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="トップ" BackgroundColor="Purple" TextColor="White" Margin="10,0,0,0" FontSize="20" CornerRadius="20" FontAttributes="Bold"  Clicked="Button_TopClicked"  />
+                <Label Text="部屋を選択"  TextColor="White" Padding="20" FontSize="20" FontAttributes="Bold" ></Label>
+            </StackLayout>
+
+            <StackLayout>
+                <ScrollView x:Name="scroller"
+                    Orientation="Vertical"           
+                    Grid.Row="0" Grid.Column="1"
+                    Grid.RowSpan="10" Grid.ColumnSpan="5">
+                    <Grid  BackgroundColor="LightSlateGray" Padding ="10, 10, 10, 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                      
+                        <Grid HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent" Clicked="Button_NewCustomer" />
+                            <Label Text="1" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" Grid.Row="0" Grid.Column="1"  >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent" Clicked="Button_NewCustomer" />
+                            <Label Text="2" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" Grid.Row="0" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent" Clicked="Button_NewCustomer"/>
+                            <Label Text="3" Margin="5" FontAttributes="Bold" TextColor="White"/>
+                            <Label Text="飲A" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" Grid.Row="0" Grid.Column="3" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Label Text="4" Margin="5" FontAttributes="Bold" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent" Clicked="Button_NewCustomer" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="0" Grid.Column="4" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="5" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="1" Grid.Column="0" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="6" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="1" Grid.Column="1" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="7" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="1" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="8" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="1" Grid.Column="3" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="9" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="1" Grid.Column="4" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="10" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="2" Grid.Column="0" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="11" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="2" Grid.Column="1" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="12" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="2" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="13" Margin="5" FontAttributes="Bold" />
+                            <Label Text="飲A" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="2" Grid.Column="3" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="14" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="2" Grid.Column="4" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="45" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="3" Grid.Column="0" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="15" Margin="5" FontAttributes="Bold" />
+                            <Label Text="飲A" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="3" Grid.Column="1" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="35" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="3" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="16" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="3" Grid.Column="3" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="17" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="3" Grid.Column="4" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="18" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="4" Grid.Column="0" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="19" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="4" Grid.Column="1" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="20" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="4" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="21" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="4" Grid.Column="3" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="22" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="4" Grid.Column="4" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="23" Margin="5" FontAttributes="Bold" />
+                            <Label Text="飲A" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="5" Grid.Column="0" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="24" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="5" Grid.Column="1" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="25" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="5" Grid.Column="2" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="26" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="5" Grid.Column="3" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="27" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid HeightRequest="75" WidthRequest="70" HorizontalOptions="Start" Grid.Row="5" Grid.Column="4" >
+                            <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                            <Button Text="" Margin="0" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"  />
+                            <Label Text="28" Margin="5" FontAttributes="Bold" />
+                            <Label Text="" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Padding="0,0,15,10" FontAttributes="Bold"/>
+                        </Grid>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+            <Grid Padding="10" Margin="30,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid HeightRequest="50" WidthRequest="60" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="1" Margin="7" HeightRequest="10" HorizontalOptions="StartAndExpand" BackgroundColor="Red"  CornerRadius="14" />
+                </Grid>
+                <Grid HeightRequest="50" WidthRequest="60" HorizontalOptions="Start" Grid.Row="0" Grid.Column="1" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="2" Margin="7" HeightRequest="10" HorizontalOptions="StartAndExpand"  CornerRadius="14" />
+                </Grid>
+                <Grid HeightRequest="50" WidthRequest="60" HorizontalOptions="Start" Grid.Row="0" Grid.Column="2" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="3" Margin="7" HeightRequest="10" HorizontalOptions="StartAndExpand"  CornerRadius="14" />
+                </Grid>
+            </Grid>
+            <StackLayout>
+                <Label Text="メッセージ"  TextColor="White"  FontSize="20" Padding="0,0,20,0" HorizontalTextAlignment="End" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="10,20,0,0">
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="トップ"  FontSize="20" Clicked="Button_TopClicked" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Black"/>
+                    
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="次"  FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow" Clicked="Button_NextClicked" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

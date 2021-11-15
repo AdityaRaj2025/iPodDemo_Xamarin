@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.OrderPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="オーダー" TextColor="White"  FontSize="30"  HorizontalTextAlignment="Center" Margin="0,0,-200,0" FontAttributes="Bold"/>
+                    <Button Grid.Column="1" Text="更新" HorizontalOptions="End" FontSize="20" VerticalOptions="Center" BackgroundColor="#E1BEE7" Margin="10,10,20,-20" CornerRadius="20" FontAttributes="Bold"/>
+                </Grid>
+            </StackLayout>
+            <Button Grid.Column="1" Text="注文する" FontSize="20" VerticalOptions="Center" BackgroundColor="#D2D8D6" Margin="15,80" Padding="0,50" TextColor="Black"  CornerRadius="35" FontAttributes="Bold" Clicked="Button_OrderClicked"/>
+            <Button Grid.Column="1" Text="注文履歴" FontSize="20" VerticalOptions="Center" BackgroundColor="#D2D8D6" Margin="15,80" Padding="0,30" TextColor="Black" CornerRadius="35" FontAttributes="Bold" Clicked="Button_OrderClicked"/>
+
+            <StackLayout Orientation="Horizontal" Margin="20,100,10,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button Text="" BackgroundColor="#E1BEE7" Grid.Row="0" Grid.Column="0" Padding="0,20" CornerRadius="20" FontAttributes="Bold"/>
+                    <Button Text="更新" BackgroundColor="#E1BEE7" Grid.Row="0" Grid.Column="3" FontSize="20" CornerRadius="20" FontAttributes="Bold" />
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPodMobileTerminals.Views.SubItemListPage" BackgroundColor="Teal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid HeightRequest="80" WidthRequest="120" HorizontalOptions="Start" Grid.Column="0" Padding="15,10" >
+                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                        <Button Grid.Column="0" Text="商品"  FontSize="20"  BackgroundColor="Transparent" CornerRadius="20" FontAttributes="Bold"/>
+                    </Grid>
+                    <Label Grid.Column="1" Text="商品を選択"  Margin="0,0,75,0" TextColor="White"  FontSize="22"  HorizontalOptions="Center" VerticalOptions="Center"  FontAttributes="Bold"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout>
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid HorizontalOptions="Center" Grid.Row="0" Margin="0,15">
+                        <Label Text="ミニパフェの" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+                    </Grid>
+                    <Grid HeightRequest="20" WidthRequest="288" HorizontalOptions="Center" Grid.Row="1">
+                        <Label Text="ミニパフェ種類" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+                    </Grid>
+
+                    <Grid HeightRequest="60" WidthRequest="288" HorizontalOptions="Center" Grid.Row="2">
+                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                        <Button Text="チョコパフェ" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                    </Grid>
+
+                    <Grid HeightRequest="60" WidthRequest="288" HorizontalOptions="Center" Grid.Row="3">
+                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                        <Button Text="抹茶パフェ" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                    </Grid>
+
+                    <Grid HeightRequest="60" WidthRequest="288" HorizontalOptions="Center" Grid.Row="4">
+                        <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                        <Button Text="チョコバナナ" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Medium"/>
+                    </Grid>
+
+                </Grid>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Margin="20,200,0,0">
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10" />
+                    <Button Text="商品" FontSize="20" CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="MintCream"/>
+
+                </Grid>
+                <Grid HeightRequest="85" WidthRequest="170" HorizontalOptions="Start"  Margin="10,0,0,0" >
+                    <Rectangle Stroke="white" StrokeThickness="2" Aspect="Fill" RadiusX="10" RadiusY="10"  />
+                    <Button Text="Next" Clicked="Button_ConfirmClicked" FontSize="20"  CornerRadius="20" FontAttributes="Bold" BackgroundColor="Transparent" TextColor="Yellow"  />
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

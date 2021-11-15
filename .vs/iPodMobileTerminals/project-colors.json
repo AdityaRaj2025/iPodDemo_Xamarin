@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "29a1d332-47fb-4641-875b-aa01379668d5": {
+      "ProjectGuid": "29a1d332-47fb-4641-875b-aa01379668d5",
+      "DisplayName": "iPodMobileTerminals",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "cf6f062b-be65-43f3-b972-7dceb7e35d4a": {
+      "ProjectGuid": "cf6f062b-be65-43f3-b972-7dceb7e35d4a",
+      "DisplayName": "iPodMobileTerminals.Android",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
