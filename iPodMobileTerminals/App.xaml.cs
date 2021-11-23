@@ -15,7 +15,7 @@ namespace iPodMobileTerminals
 
             SQLiteConnection con = DependencyService.Get<ISQLite>().GetConnectionWithDatabase();
 
-            MainPage = new OrderPage();
+            MainPage = new NavigationPage(new  OrderPage());
         }
 
         protected override void OnStart()

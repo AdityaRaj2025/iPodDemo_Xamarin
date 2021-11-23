@@ -16,10 +16,13 @@ namespace iPodMobileTerminals.Views
         public OrderPage()
         {
             InitializeComponent();
+           
+            Navigation.PopAsync(true);
         }
         public void Button_OrderClicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new RoomListPage();
+            Navigation.PushAsync(new RoomListPage(), true);
+
         }
     }
 }

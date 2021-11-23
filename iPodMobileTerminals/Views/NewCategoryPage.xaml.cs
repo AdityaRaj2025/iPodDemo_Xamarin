@@ -19,7 +19,8 @@ namespace iPodMobileTerminals.Views
         public NewCategoryPage()
         {
             InitializeComponent();
-            
+            Navigation.PopAsync(true);
+
         }
 
         private void SaveRoomDetails(object sender, EventArgs e)

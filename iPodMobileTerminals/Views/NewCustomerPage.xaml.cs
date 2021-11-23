@@ -15,15 +15,18 @@ namespace iPodMobileTerminals.Views
         public NewCustomerPage()
         {
             InitializeComponent();
+            Navigation.PopAsync(true);
         }
         public void Button_TopClicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new OrderPage();
+            // App.Current.MainPage = new OrderPage();
+            Navigation.PushAsync(new OrderPage(), true);
         }
 
         public void Button_BackClicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new RoomListPage();
+            //App.Current.MainPage = new RoomListPage();
+            Navigation.PushAsync(new RoomListPage(), true);
         }
     }
 }

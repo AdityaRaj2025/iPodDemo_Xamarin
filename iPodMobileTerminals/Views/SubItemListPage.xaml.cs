@@ -15,11 +15,13 @@ namespace iPodMobileTerminals.Views
         public SubItemListPage()
         {
             InitializeComponent();
+            Navigation.PopAsync(true);
         }
 
         private void Button_ConfirmClicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new ConfirmationPage();
+            //App.Current.MainPage = new ConfirmationPage();
+            Navigation.PushAsync(new ConfirmationPage(), true);
         }
 
 
